@@ -375,7 +375,7 @@ nav .container .navbar-nav .nav-item .nav-link {
 		outline: none;
 	}
 	.wrapper .brand .navbar-brand {
-		margin: 0;
+		margin-top: 0.9rem;
 	}
 	.wrapper .brand .navbar-brand a{
 		float: none;
