@@ -172,6 +172,9 @@ nav .container .navbar-nav .nav-item .nav-link {
 	color: #757575;
 	text-decoration: none;
 }
+.articles .articles-body {
+	text-align: justify;
+}
 .userInfo .fa{
 	font-size: 0.6rem;
 	color: lightslategray;
@@ -199,7 +202,7 @@ nav .container .navbar-nav .nav-item .nav-link {
 
 .rightContent .rightContent-body .header  h6, .layout .left-sidebar h4 {
 	font-family: notoSans_regular, sans-serif;
-	text-align: left;
+	line-height: 1.6;
 }
 
 .rightContent .rightContent-body .video{
