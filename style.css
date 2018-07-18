@@ -396,7 +396,7 @@ nav .container .navbar-nav .nav-item .nav-link {
 	}
 	.signInButton {
 		display: block;
-		font-family: montserrat;
+		font-family: montserrat, sans-serif;
 		font-size: 0.8rem;
 		text-transform: uppercase;
 	}
