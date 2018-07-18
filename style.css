@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'kumarkhali_regular';
-    src: url('/css/fonts/KUMAO___.ttf');
+    src: url('/css/fonts/KumarkhaliMJ.ttf');
 }
 @font-face {
     font-family: 'notoSans_regular';
@@ -56,7 +56,7 @@ html, body, .wrapper{
 
 .wrapper .brand .navbar-brand a {
 	color: rgb(78, 88, 97);
-	font-family: notoSans_regular;
+	font-family: kumarkhali_regular;
 	font-size: 3.5rem;
 	font-weight: bold;
 }
