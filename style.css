@@ -54,7 +54,7 @@ html, body, .wrapper{
 	text-decoration: none;
 }
 
-.brand .navbar-brand a {
+.wrapper .brand .navbar-brand a {
 	color: rgb(78, 88, 97);
 	font-family: notoSans_regular;
 	font-size: 3.5rem;
