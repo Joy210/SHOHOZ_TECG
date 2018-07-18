@@ -1,0 +1,457 @@
+/* Mukti */
+@import url('https://fonts.maateen.me/mukti/font.css');
+
+@font-face {
+    font-family: 'kumarkhali_regular';
+    src: url('/Shohoz_Tech-master/css/fonts/KUMAO___.ttf');
+}
+@font-face {
+    font-family: 'notoSans_regular';
+    src: url('/Shohoz_Tech-master/css/fonts/NotoSansBengali-Regular.ttf');
+}
+@font-face {
+    font-family: 'notoSans_bold';
+    src: url('/Shohoz_Tech-master/css/fonts/NotoSansBengali-Bold.ttf');
+}
+@font-face {
+	font-family: 'charukola_light';
+	src: url('/Shohoz_Tech-master/css/fonts/Charukola_Light.ttf')
+}
+@font-face {
+	font-family: 'montserrat';
+	src: url('/Shohoz_Tech-master/css/fonts/Montserrat-Regular.otf')
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body, .wrapper{
+	width: 100%;
+	height: 100%;
+}
+
+.lsNone { list-style: none; }
+.tdNone { text-decoration: none; }
+.right { float: right; }
+.left { float: left; }
+
+.navbar {
+	font-family: notoSans_regular;
+}
+
+.brand{
+	display: table;
+	width: 100%;
+}
+.brand .navbar-brand{
+	float: left;
+	padding: 0;
+}
+
+.brand .navbar-brand a, .signInProcess .modal-header a,  .registrationProcess .modal-header a{
+	text-decoration: none;
+}
+
+.brand .navbar-brand a {
+	color: rgb(78, 88, 97);
+	font-family: kumarkhali_regular;
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+
+.brand .navbar-nav{
+	float: right;
+}
+
+.brand .navbar-brand span{
+	color: coral;
+	font-weight: bold;
+}
+.wrapper .brand .navbar-brand p{
+	color: grey;
+	font-family: notoSans_regular;
+	font-size: 0.9rem;
+}
+.brand .nav-item{
+	padding-left: 1rem;
+}
+.brand .nav-link{
+	color: grey;
+	font-size: 0.9rem;
+	outline: none;
+}
+.brand .nav-link:hover{
+	color: #333;
+}
+
+/* Navbar */
+.form-inline input{
+	height: 2rem;
+	font-size: 0.9rem;
+}
+
+.navbar .signInMenu {
+	display: none;
+}
+
+.navbar .container .fa{
+	color: coral;
+}
+
+.signInButton {
+	display: none;
+}
+
+/* Showcase */
+.showcase{
+	width: 100%;
+	height: 400px;
+	background: url('images/image1.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+nav .container .navbar-nav .nav-item .nav-link {
+	padding-left: 0;
+	padding-right: 1rem;
+}
+
+.layout .row{
+	display: grid;
+	grid-gap: 4rem;
+	grid-template-columns: 8fr 4fr;
+	font-family: notoSans_regular, sans-serif;
+	line-height: 1.6;
+}
+.layout .left-sidebar{
+	padding-left: 0;
+}
+
+.layout .left-sidebar a {
+	text-decoration: none;
+}
+
+.layout .left-sidebar .articles h5 {
+	color: #333333;
+	font-weight: bold;
+}
+
+.layout .left-sidebar .articles h5:hover {
+	color: #0056B3;
+}
+
+.layout .right-sidebar{
+	padding-left: 0;
+}
+
+.layout .right-sidebar h6 {
+	line-height: 1.6;
+}
+
+.articles{
+	width: 100%;
+}
+.articles .readBtn{
+	display: block;
+	padding: 0.4rem;
+	width: 80px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 0.8rem;
+	outline: none;
+}
+.articles .userInfo a, p{
+	font-size: 0.9rem;
+	color: #757575;
+	text-decoration: none;
+}
+.userInfo .fa{
+	font-size: 0.6rem;
+	color: lightslategray;
+}
+
+.rightContent{
+	width: 100%;
+	display: table;
+	border-bottom: 1px solid #dddddd;
+}
+
+.rightContent h6 , h5{
+	font-weight: bold;
+}
+
+.rightContent .rightContent-header{
+	float: left;
+	width: 20%;
+	color: lightgrey;
+}
+.rightContent .rightContent-body{
+	float: left;
+	width: 80%;
+}
+
+.rightContent .rightContent-body .header  h6, .layout .left-sidebar h4 {
+	font-family: ;
+}
+
+.rightContent .rightContent-body .video{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.rightContent .rightContent-body iframe{
+	width: 100%;
+}
+.rightContent-body .userInfo a,.rightContent-body  .userInfo p{
+	font-size: 0.8rem;
+	color: lightslategray;
+}
+.rightContent-body .userInfo p .fa{
+	color: lightslategray;
+	font-size: 0.5rem;
+}
+
+/* Sign in Modal */
+.signInProcess .modal {
+	margin-top: 7%;;
+}
+.modal-header a{
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: grey;
+	margin: auto;
+}
+.modal-header span{
+	color: coral;
+	font-weight: bold;
+}
+.signInProcess .modal-body {
+	border-bottom: 5px solid coral;
+}
+
+.signInProcess .modal-body .form {
+	width: 70%;
+	margin: auto;
+}
+.signInProcess .modal-body .input-group{
+	padding: 0.5rem 0;
+}
+.signInProcess .modal-body .input-group input{
+	font-size: 0.9rem;
+}
+
+.signInProcess .modal-body .input-group .fa{
+	font-size: 0.9rem;
+	padding: 0.7rem;
+	background-color: #ddd;
+	border-radius: 0.3rem 0 0 0.3rem;
+}
+.signInProcess .modal-body label{
+	font-size: 0.9rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.modal-body .btn{
+	width: 100%;
+}
+
+/* Registration Modal */
+.modal-header .far{
+	font-size: 1.5rem;
+	color: lightgrey;
+	cursor: pointer;
+}
+.modal-header .far:hover{
+	color: coral;
+}
+.registrationProcess .modal-body{
+	border-bottom: 5px solid coral;
+}
+.registrationProcess form{
+	width: 80%;
+	margin: auto;
+}
+.registrationProcess .form-group input{
+	width: 100%;
+	font-size: 0.8rem;
+	color: gray;
+}
+.registrationProcess .form-group label,  form label{
+	font-size: 0.9rem;
+	color: lightslategray;
+}
+.registrationProcess .form-group .remember {
+	font-size: 0.8rem;
+	color: lightslategray;
+}
+.registrationProcess form .btn{
+	width: 100%;
+}
+
+
+.remember__forget .checkbox,
+.remember__forget .forget {
+	font-size: 0.9rem;
+	text-decoration: none;
+}
+.remember__forget .checkbox {
+	float: left;
+}
+
+.remember__forget .forget {
+	float: right;
+}
+
+
+
+
+/* footer */
+
+.footer{
+	padding: 2rem 0;;
+	color: #fff;
+}
+.footer .row{
+	display: grid;
+	grid-template-columns: 3fr 6fr 3fr;
+}
+.footer h5{
+	font-weight: bold;
+}
+.footer ul{
+	list-style: none;
+}
+.footer li{
+	line-height: 2rem;
+}
+.footer ul li a{
+	text-decoration: none;
+	color: lightslategray;
+	font-size: 0.9rem;
+}
+.footer ul li a:hover{
+	color: #FFC107;
+}
+.footer .input-group{
+	width: 450px;
+}
+.footer .subscribeBtn{
+	border: none;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	border-radius: 0 0.3rem 0.3rem 0;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+.footer .instaImg img{
+	padding-bottom: 0.3rem;
+}
+.footer .fa, .footer span{
+	color: #FFC107;
+}
+
+
+
+@media screen and (max-width: 375px) {
+	.wrapper .brand {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	.wrapper .brand .navbar-brand {
+		margin: 0;
+	}
+	.wrapper .brand .navbar-brand a{
+		float: none;
+		font-size: 3.2rem;
+	}
+	.wrapper .brand .navbar-brand p {
+		font-size: 0.8rem;
+	}
+	.wrapper .brand .navbar-nav{
+		display: none;
+	}
+	.navbar .container .signInMenu {
+		display: block;
+		font-family: montserrat;
+	}
+	.navbar .container .signInMenu .btn {
+		font-size: 0.8rem;
+	}
+	.signInButton {
+		display: block;
+		font-family: montserrat;
+		font-size: 0.8rem;
+		text-transform: uppercase;
+	}
+	.showcase h1 {
+		width: 70%;
+		text-align: center;
+		font-size: 2rem;
+		line-height: 1.5;
+	}
+	.layout .row{
+		grid-template-columns: 1fr;
+	}	
+	.layout .row .col{
+		padding: 0;
+	}
+	.container h4 {
+		font-weight: bold;
+	}
+	.paragraph {
+		line-height: 1.6;
+	}
+	.left-content {
+		margin-right: 0;;
+	}
+	.rightContent-header {
+		display: none;
+	}
+	.rightContent{
+		width: 100%;
+		display: table;
+	}
+	.rightContent .rightContent-header, 
+	.rightContent .rightContent-body{
+		float: none;
+		width: 100%;
+	}
+	.rightContent .rightContent-body iframe{
+		width: 100%;
+		height:200px;
+	}
+	.right-sidebar .header {
+		margin-top: 0;
+	}
+
+	.footer {
+		text-align: center;
+	}
+
+	.footer .row{
+		grid-template-columns: 1fr;
+	}
+	.footer .input-group{
+		width: 340px;
+		margin-bottom: 50px;
+	}
+	.footer input {
+		font-size: 0.9rem;
+	}
+	.footer h5 {
+		margin-top: 50px;;
+	}
+	.footer .instaImg, .insta-header {
+		display: none;
+	}
+}
