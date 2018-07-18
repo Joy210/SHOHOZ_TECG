@@ -389,7 +389,7 @@ nav .container .navbar-nav .nav-item .nav-link {
 	}
 	.navbar .container .signInMenu {
 		display: block;
-		font-family: montserrat;
+		font-family: montserrat, sans-serif;
 	}
 	.navbar .container .signInMenu .btn {
 		font-size: 0.8rem;
