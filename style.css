@@ -198,7 +198,7 @@ nav .container .navbar-nav .nav-item .nav-link {
 }
 
 .rightContent .rightContent-body .header  h6, .layout .left-sidebar h4 {
-	font-family: notoSans_regular;
+	font-family: notoSans_regular, sans-serif;
 }
 
 .rightContent .rightContent-body .video{
@@ -331,7 +331,7 @@ nav .container .navbar-nav .nav-item .nav-link {
 .footer li{
 	line-height: 2rem;
 }
-.footer ul li a{
+.footer ul li a, .footer p{
 	text-decoration: none;
 	color: lightslategray;
 	font-size: 0.9rem;
