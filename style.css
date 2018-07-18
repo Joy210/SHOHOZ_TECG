@@ -199,6 +199,7 @@ nav .container .navbar-nav .nav-item .nav-link {
 
 .rightContent .rightContent-body .header  h6, .layout .left-sidebar h4 {
 	font-family: notoSans_regular, sans-serif;
+	text-align: left;
 }
 
 .rightContent .rightContent-body .video{
