@@ -3,28 +3,23 @@
 
 @font-face {
     font-family: 'kumarkhali_regular';
-	src: url('/css/fonts/KumarkhaliMJ.ttf');
-	font-style: normal;
+    src: url('/css/fonts/KUMAO___.ttf');
 }
 @font-face {
     font-family: 'notoSans_regular';
     src: url('/css/fonts/NotoSansBengali-Regular.ttf');
-	font-style: normal;
 }
 @font-face {
     font-family: 'notoSans_bold';
     src: url('/css/fonts/NotoSansBengali-Bold.ttf');
-	font-style: normal;
 }
 @font-face {
 	font-family: 'charukola_light';
-	src: url('/css/fonts/Charukola_Light.ttf');
-	font-style: normal;
+	src: url('/css/fonts/Charukola_Light.ttf')
 }
 @font-face {
 	font-family: 'montserrat';
-	src: url('/css/fonts/Montserrat-Regular.otf');
-	font-style: normal;
+	src: url('/css/fonts/Montserrat-Regular.otf')
 }
 
 *{
@@ -43,7 +38,7 @@ html, body, .wrapper{
 .left { float: left; }
 
 .navbar {
-	font-family: notoSans_regular;
+	font-family: notoSans_regular, sans-serif;
 }
 
 .brand{
@@ -59,9 +54,10 @@ html, body, .wrapper{
 	text-decoration: none;
 }
 
-.wrapper .brand .navbar-brand a {
-	color: lightslategray;
-	font-size: 3rem;
+.brand .navbar-brand a {
+	color: rgb(78, 88, 97);
+	font-family: kumarkhali_regular;
+	font-size: 3.5rem;
 	font-weight: bold;
 }
 
@@ -372,14 +368,15 @@ nav .container .navbar-nav .nav-item .nav-link {
 	.wrapper .brand {
 		width: 100%;
 		text-align: center;
-		outline: none;
+		margin: 0;
+		padding: 0;
 	}
 	.wrapper .brand .navbar-brand {
-		margin-top: 0.9rem;
+		margin: 0;
 	}
 	.wrapper .brand .navbar-brand a{
 		float: none;
-		font-size: 2.5rem;
+		font-size: 3.2rem;
 	}
 	.wrapper .brand .navbar-brand p {
 		font-size: 0.8rem;
@@ -389,14 +386,14 @@ nav .container .navbar-nav .nav-item .nav-link {
 	}
 	.navbar .container .signInMenu {
 		display: block;
-		font-family: montserrat, sans-serif;
+		font-family: montserrat;
 	}
 	.navbar .container .signInMenu .btn {
 		font-size: 0.8rem;
 	}
 	.signInButton {
 		display: block;
-		font-family: montserrat, sans-serif;
+		font-family: montserrat;
 		font-size: 0.8rem;
 		text-transform: uppercase;
 	}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Shohoz Tech</title>
+
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/fontawesome-icon/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <style>
+        .lightblue { background-color: lightblue; }
+        .lightgrey { background-color: #dddddd; }
+
+        .btn-file {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-file input[type=file] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 100%;
+            min-height: 100%;
+            font-size: 100px;
+            text-align: right;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            outline: none;
+            background: white;
+            cursor: inherit;
+            display: block;
+        }
+
+        #img-upload{
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container-fluid lightgrey text-black">
+            <div class=" container">
+                <div class="brand">
+                    <div class="navbar-brand">
+                        <a href="index.html">সহজ<span>টেক</span></a>
+                        <p>আমরা জানব, আমরা শিখবো, আমরা শেখাবো। প্রতিদিন সবার সাথে।</p>
+                    </div>
+                                        
+                    <ul class="navbar-nav navbar-expand pt-3">
+                        <li class="nav-item">
+                            <a href="Profile/profile.html" class="nav-link">MY ACCOUNT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="publish-content ">
+
+                <div class="alert alert-success mb-4" style="width: 70%; margin: auto;">
+                    <strong>Update</strong> post successfully
+                </div>
+    
+                <form class="form text-left" style="width: 70%; margin: auto;">
+                    <div class="form-group">
+                        <label for="">Title*</label>
+                        <input type="text" class="form-control lead">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Content*</label>
+                        <textarea name="" id="" cols="30" rows="4" class="form-control lead"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Upload Image</label>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <span class="btn btn-default btn-file">
+                                    Browse… <input type="file" id="imgInp">
+                                </span>
+                            </span>
+                            <input type="text" class="form-control" readonly>
+                        </div>
+                        <img id='img-upload'/>
+                    </div>
+
+                    <button class="btn btn-primary mb-5">Update Post</button>
+                </form>
+            </div>
+
+            <!-- <div class="comment-section" style="width: 70%; margin: auto;">
+                <div class="form">
+                    <h5 class="display-5 mb-4">Comment*</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control lead">
+                        <button class="btn btn-primary">comment</button>
+                    </div>
+                </div>
+
+                <ul class="card mt-4 mb-5 p-4" style="list-style: none;">
+                    <li class="authorName">
+                        <a href="" class="title">Siyam</a>
+
+                        <p class="lead" style="font-size: 1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, provident!</p>
+                    </li> <hr>
+                    <li class="authorName">
+                        <a href="" class="title">Joy</a>
+
+                        <p class="lead" style="font-size: 1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, provident!</p>
+                    </li> <hr>
+                    <li class="authorName">
+                        <a href="" class="title">Ahsan Habib</a>
+
+                        <p class="lead" style="font-size: 1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, provident!</p>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+
+
+
+    </div> <!--  wrapper -->
+    
+
+    <div class="signInProcess">
+        <div class="modal fade" id="signInModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="#">SHOHOZ<span>TECH</span></a>
+
+                        <span><i class="far fa-times-circle" data-dismiss="modal"></i></span>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h3>SIGN IN</h3>
+
+                        <form class="form text-center mt-4">
+                            <div class="input-group">
+                                <span><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Username">
+                            </div>
+                            <div class="input-group">
+                                <span><i class="fa fa-lock"></i></span>
+                                <input type="password" class="form-control" placeholder="Enter password">
+                            </div>
+
+                            <button class="btn btn-primary btn-sm mt-2" type="submit">Sign in</button>
+
+                            <div class="remember__forget">
+                                <div class="checkbox mb-3">
+                                    <label><input type="checkbox" value=""> Remember Me</label><br>
+                                </div>
+
+                                <div class="forget mb-3"><a href="#" class="forget mt-3">Forget Password?</a></div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="registrationProcess">
+        <div class="modal fade" id="registrtionModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="#">SHOHOZ<span>TECH</span></a>
+
+                        <span><i class="far fa-times-circle" data-dismiss="modal"></i></span>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="text">FirstName*</label>
+        
+                                        <input type="text" class="form-control">
+                                    </div> 
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="text">LastName*</label>
+        
+                                        <input type="text" class="form-control">
+                                    </div> 
+                                </div>
+                            </div>
+                                
+                            <div class="form-group">
+                                <label for="text">Username*</label>
+                                
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail*</label>
+                                
+                                <input type="email" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="pwd">Password*</label>
+                                
+                                <input type="password" class="form-control">
+                            </div> 
+                            <div class="form-group">
+                                <label for="pwd">Confirm Password*</label>
+                                
+                                <input type="password" class="form-control">
+                            </div>
+
+                            <button class="btn btn-primary btn-sm mb-3" type="submit">SIGN UP</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script>
+    $(document).ready( function() {
+    	$(document).on('change', '.btn-file :file', function() {
+		var input = $(this),
+			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+		input.trigger('fileselect', [label]);
+		});
+
+		$('.btn-file :file').on('fileselect', function(event, label) {
+		    
+		    var input = $(this).parents('.input-group').find(':text'),
+		        log = label;
+		    
+		    if( input.length ) {
+		        input.val(log);
+		    } else {
+		        if( log ) alert(log);
+		    }
+	    
+		});
+		function readURL(input) {
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+		        
+		        reader.onload = function (e) {
+		            $('#img-upload').attr('src', e.target.result);
+		        }
+		        
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
+
+		$("#imgInp").change(function(){
+		    readURL(this);
+		}); 	
+	});
+</script>
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

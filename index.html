@@ -16,16 +16,16 @@
         <div class="container">
             <div class="brand">
                 <div class="navbar-brand">
-                    <a href="#">Shohoz<span>Tech</span></a>
+                    <a href="#">সহজ<span>টেক</span></a>
                     <p>আমরা জানব, আমরা শিখবো, আমরা শেখাবো। প্রতিদিন সবার সাথে।</p>
                 </div>
                                     
-                <ul class="navbar-nav navbar-expand pt-2">
+                <ul class="navbar-nav navbar-expand pt-3">
                     <li class="nav-item">
                         <a href="#" class="nav-link" data-toggle="modal" data-target="#signInModal">SIGN IN</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" data-toggle="modal" data-target="#registrtionModal">REGISTER</a>
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#registrtionModal">SIGN UP</a>
                     </li>
                 </ul>
             </div>
@@ -56,6 +56,9 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link"> ICT </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/publish_Content.html" class="nav-link"> Add Post </a>
                         </li>
 			    
                         <li class="nav-item dropdown">
@@ -108,7 +111,7 @@
                                                 <p class="paragraph">ইন্টেল প্রসেসর গুলোর মাঝে আবারো নতুন করে একটি বাগ ধরা পরলো। Lazy FPU context switching নামে প্রসেসরের একটি অপ্টিমাইজেশান ফিচার রয়েছে যেখানে অপারেটিং সিস্টেম রেজিস্টারে ফ্লটিং পয়েন্ট নাম্বার জমা রাখে এবং যখন দরকার পড়ে সেখান থেকে নিয়ে আবার ব্যবহার করে। যার ফলে প্রসেসরের বার বার একই ক্যাকুলেশনের প্রয়োজন পড়ে না, এতে করে প্রসেসর অন্যান্য কাজে সময় দিতে পারে এবং পারফর্মেন্স বৃদ্ধি করতে পারে।</p>
                                             </div>
 
-                                            <a href="https://bit.ly/2KL79DK" class="readBtn btn-dark mb-3" target="_blank"> আরও পড়ুন </a>
+                                            <a href="/postDeatils.html" class="readBtn btn-dark mb-3" target="_blank"> আরও পড়ুন </a>
 
                                             <div class="userInfo">
                                                 <a href="#">Robin DiAngelo</a>
@@ -357,7 +360,7 @@
                         <form class="form text-center mt-4">
                             <div class="input-group">
                                 <span><i class="fa fa-user"></i></span>
-                                <input type="email" class="form-control" placeholder="Enter e-mail">
+                                <input type="text" class="form-control" placeholder="Enter Username">
                             </div>
                             <div class="input-group">
                                 <span><i class="fa fa-lock"></i></span>
@@ -393,11 +396,28 @@
                     </div>
                     <div class="modal-body">
                         <form>
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="text">FirstName*</label>
+        
+                                        <input type="text" class="form-control">
+                                    </div> 
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="text">LastName*</label>
+        
+                                        <input type="text" class="form-control">
+                                    </div> 
+                                </div>
+                            </div>
+                                
                             <div class="form-group">
-                                <label for="email">Name*</label>
-
+                                <label for="text">Username*</label>
+                                
                                 <input type="text" class="form-control">
-                            </div> 
+                            </div>
 
                             <div class="form-group">
                                 <label for="email">E-mail*</label>
@@ -411,21 +431,12 @@
                                 <input type="password" class="form-control">
                             </div> 
                             <div class="form-group">
-                                <label for="pwd">Re_type Password*</label>
+                                <label for="pwd">Confirm Password*</label>
                                 
                                 <input type="password" class="form-control">
                             </div>
-                                
 
-                            <div class="form-group">
-                                <label for="number">Phone Number*</label>
-                                
-                                <input type="text" class="form-control">
-                            </div>
-                            
-                            <label class="remember mt-1 mb-4"><input type="checkbox"> I accept the Terms & Conditions</label><br>
-
-                            <button class="btn btn-primary btn-sm mb-3" type="submit">Register</button>
+                            <button class="btn btn-primary btn-sm mb-3" type="submit">SIGN UP</button>
                         </form>
                     </div>
                 </div>
