@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="userProfile.css">
+    <link rel="stylesheet" href="imageUpload.css">
+
+	<link rel="stylesheet" href="css/fontawesome-icon/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="userProfile.js"></script>
+
+    <title>Shohoz Tech</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container-fluid lightgrey">
+            <div class="container p-0">
+                <div class="brand">
+                    <div class="navbar-brand">
+                        <a href="index.html">সহজ<span>টেক</span></a>
+                        <p>আমরা জানব, আমরা শিখবো, আমরা শেখাবো। প্রতিদিন সবার সাথে।</p>
+                    </div>
+                                        
+                    <ul class="navbar-nav navbar-expand pt-3">
+                        <li class="nav-item">
+                            <a href="userProfile.html" class="nav-link"">MY ACCOUNT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container p-0">
+            <div class="showcase">
+                <div class="preview img-wrapper"></div>
+                
+                <div class="file-upload-wrapper">
+                    <input type="file" name="file" class="file-upload-native" accept="image/*" />
+                    <input type="text" disabled placeholder="upload image" class="file-upload-text" />
+                </div>             
+            </div>
+
+            <div class="userInfo">
+                <form class="form lightgrey pt-5 text-center">
+                    <table>
+                        <tr>
+                            <th>Name:</th>
+                            <td><input type="text" class="form-control" value="S. Rahman"></td>
+                        </tr>
+                        <tr>
+                            <th>E-mail:</th>
+                            <td><input type="text" class="form-control" value="s.rahman@gmail.com"></td>
+                        </tr>
+                        <tr>
+                            <th>Address:</th>
+                            <td><input type="text" class="form-control" value="Mohammadpur"></td>
+                        </tr>
+                        <tr>
+                            <th>Password:</th>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <th>Confirm Password:</th>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><button class="btn btn-primary text-center mt-2 mb-5">Save</button></td>
+                        </tr>
+                    </table>
+                    
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
