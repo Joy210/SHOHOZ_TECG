@@ -228,26 +228,27 @@ input[type="file"]::-webkit-file-upload-button {
         padding: 0;
     }
 
-    .brand{
-        display: block;
-        width: 100%;
-    }
-
     .wrapper .brand{
         display: table;
+        display: center;
+        width: 100%
     }
 
     .wrapper .brand .navbar-brand {
+        width: 100%;
         text-align: center;
-        float: none;
         margin: 0;
     }
 
     .wrapper .brand .navbar-brand p {
         font-size: 0.7rem;
+        text-align: center;
     }
 
-
+    .form table {
+        width: 90%;
+        margin: auto;
+    }
         
 }
 
