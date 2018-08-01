@@ -34,7 +34,7 @@ html, body, .wrapper{
 .tdNone { text-decoration: none; }
 .right { float: right; }
 .left { float: left; }
-.lightgrey { background-color: lightgrey; }
+.lightblue { background-color: rgb(223, 247, 255); }
 
 .navbar {
 	font-family: notoSans_regular, sans-serif;
