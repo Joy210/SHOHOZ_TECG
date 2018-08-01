@@ -3,23 +3,23 @@
 
 @font-face {
     font-family: 'kumarkhali_regular';
-    src: url('/css/fonts/KUMAO___.ttf');
+    src: url('css/fonts/KUMAO___.ttf');
 }
 @font-face {
     font-family: 'notoSans_regular';
-    src: url('/css/fonts/NotoSansBengali-Regular.ttf');
+    src: url('css/fonts/NotoSansBengali-Regular.ttf');
 }
 @font-face {
     font-family: 'notoSans_bold';
-    src: url('/css/fonts/NotoSansBengali-Bold.ttf');
+    src: url('css/fonts/NotoSansBengali-Bold.ttf');
 }
 @font-face {
 	font-family: 'charukola_light';
-	src: url('/css/fonts/Charukola_Light.ttf')
+	src: url('css/fonts/Charukola_Light.ttf')
 }
 @font-face {
 	font-family: 'montserrat';
-	src: url('/css/fonts/Montserrat-Regular.otf')
+	src: url('css/fonts/Montserrat-Regular.otf')
 }
 
 *{
