@@ -12,77 +12,89 @@
     src: url('css/fonts/NotoSansBengali-Bold.ttf');
 }
 @font-face {
-	font-family: 'charukola_light';
-	src: url('css/fonts/Charukola_Light.ttf')
+    font-family: 'charukola_light';
+    src: url('css/fonts/Charukola_Light.ttf')
 }
 @font-face {
-	font-family: 'montserrat';
-	src: url('css/fonts/Montserrat-Regular.otf')
+    font-family: 'montserrat';
+    src: url('css/fonts/Montserrat-Regular.otf')
 }
 
 *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-html, body, .wrapper{
-	width: 100%;
-	height: 100%;
-}
+
 
 .lsNone { list-style: none; }
 .tdNone { text-decoration: none; }
 .right { float: right; }
 .left { float: left; }
 .lightblue { background-color: rgb(223, 247, 255); }
+.lightgrey { background-color: #F0F0F0; }
+
+body, .wrapper {
+    width: 100%;
+    height: 100%;
+    font-family: 'notoSans_regular', sans-serif;
+}
 
 .navbar {
-	font-family: notoSans_regular, sans-serif;
+    font-family: notoSans_regular, sans-serif;
+}
+
+.wrapper .container-fluid {
+    border-bottom: 4px solid coral;
+}
+
+.wrapper .container-fluid .container {
+    padding: 0;
 }
 
 .brand{
-	display: table;
-	width: 100%;
+    display: table;
+    width: 100%;
 }
 .brand .navbar-brand{
-	float: left;
-	padding: 0;
-}
-
-.brand .navbar-brand a, .signInProcess .modal-header a,  .registrationProcess .modal-header a{
-	text-decoration: none;
+    float: left;
+    padding: 0;
 }
 
 .brand .navbar-brand a {
-	color: rgb(78, 88, 97);
-	font-family: kumarkhali_regular;
-	font-size: 3.5rem;
-	font-weight: bold;
+    text-decoration: none;
+}
+
+.brand .navbar-brand a {
+    color: rgb(78, 88, 97);
+    font-family: kumarkhali_regular;
+    font-size: 3.5rem;
+    font-weight: bold;
 }
 
 .brand .navbar-nav{
-	float: right;
+    float: right;
 }
 
 .brand .navbar-brand span{
-	color: coral;
-	font-weight: bold;
+    color: coral;
+    font-weight: bold;
 }
 .wrapper .brand .navbar-brand p{
-	color: grey;
-	font-family: notoSans_regular;
-	font-size: 0.9rem;
+    color: grey;
+    font-family: notoSans_regular;
+    font-size: 0.9rem;
 }
 .brand .nav-item{
-	padding-left: 1rem;
+    padding-left: 1rem;
 }
 .brand .nav-link{
-	color: grey;
-	font-size: 0.9rem;
-	outline: none;
+    color: grey;
+    font-size: 0.9rem;
+    outline: none;
 }
 .brand .nav-link:hover{
-	color: #333;
+    color: #333;
 }
 
 /* Navbar */
@@ -320,7 +332,18 @@ nav .container .navbar-nav .nav-item .nav-link {
 .footer{
 	padding: 2rem 0;;
 	color: #fff;
+    border-top: 4px solid coral;
 }
+.footer p{
+	text-decoration: none;
+	color: lightslategray;
+	font-size: 0.9rem;
+	margin: 0;
+}
+.footer .fa, .footer span{
+	color: #FFC107;
+}
+/*
 .footer .row{
 	display: grid;
 	grid-template-columns: 3fr 6fr 3fr;
@@ -339,6 +362,7 @@ nav .container .navbar-nav .nav-item .nav-link {
 	color: lightslategray;
 	font-size: 0.9rem;
 }
+
 .footer ul li a:hover{
 	color: #FFC107;
 }
@@ -360,26 +384,35 @@ nav .container .navbar-nav .nav-item .nav-link {
 .footer .fa, .footer span{
 	color: #FFC107;
 }
-
-
+*/
 
 @media screen and (max-width: 375px) {
-	.wrapper .brand {
-		width: 100%;
-		text-align: center;
-		margin: 0;
-		padding: 0;
-	}
-	.wrapper .brand .navbar-brand {
-		margin: 0;
-	}
-	.wrapper .brand .navbar-brand a{
-		float: none;
-		font-size: 3.2rem;
-	}
-	.wrapper .brand .navbar-brand p {
-		font-size: 0.8rem;
-	}
+    .wrapper , .wrapper .container-fluid {
+        width: 100%;
+    }
+
+    .wrapper .container-fluid .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper .brand{
+        display: table;
+        display: center;
+        width: 100%
+    }
+
+    .wrapper .brand .navbar-brand {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .wrapper .brand .navbar-brand p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
 	.wrapper .brand .navbar-nav{
 		display: none;
 	}
@@ -401,6 +434,10 @@ nav .container .navbar-nav .nav-item .nav-link {
 		text-align: center;
 		font-size: 2rem;
 		line-height: 1.5;
+	}
+
+	.wrapper .layout {
+		margin: 0 1rem;
 	}
 	.layout .row{
 		grid-template-columns: 1fr;

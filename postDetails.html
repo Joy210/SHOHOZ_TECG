@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="postDetails.css">
+	<link rel="stylesheet" href="css/fontawesome-icon/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <title>Shohoz Tech</title>
+
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container-fluid lightblue text-black">
+            <div class="container">
+                <div class="brand">
+                    <div class="navbar-brand">
+                        <a href="index.html">সহজ<span>টেক</span></a>
+                        <p>আমরা জানব, আমরা শিখবো, আমরা শেখাবো। প্রতিদিন সবার সাথে।</p>
+                    </div>
+                                        
+                    <ul class="navbar-nav navbar-expand pt-3">
+                        <li class="nav-item">
+                            <a href="userProfile.html" class="nav-link">MY ACCOUNT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="publishDetails">
+                <div class="postTitle pt-4 mb-2">
+                    <h2>ইন্টেল প্রসেসর গুলোর মাঝে আবারো নতুন করে একটি বাগ ধরা পরলো</h2>
+                </div>
+
+                <img src="images/image1.jpg" alt="">
+  
+                <div class="postContent lightgrey text-justify p-3 mb-3">
+                    <p class="m-0">ইন্টেল প্রসেসর গুলোর মাঝে আবারো নতুন করে একটি বাগ ধরা পরলো। Lazy FPU context switching নামে প্রসেসরের একটি অপ্টিমাইজেশান ফিচার রয়েছে যেখানে অপারেটিং সিস্টেম রেজিস্টারে ফ্লটিং পয়েন্ট নাম্বার জমা রাখে এবং যখন দরকার পড়ে সেখান থেকে নিয়ে আবার ব্যবহার করে। যার ফলে প্রসেসরের বার বার একই ক্যাকুলেশনের প্রয়োজন পড়ে না, এতে করে প্রসেসর অন্যান্য কাজে সময় দিতে পারে এবং পারফর্মেন্স বৃদ্ধি করতে পারে। <br><br>
+
+                    ক্যাকুলেশন গুলো কোন একটি নির্দিষ্ট প্রোসেসিং বা কাজ সম্পাদন করার ক্ষেত্রে ব্যবহার হয়। সমস্যা হচ্ছে অন্য কোন প্রোসেসিং প্রোগ্রাম এই সকল রেজিস্টারের ডাটা দেখতে পারে যা নিরাপত্তার ইস্যু হিসেবে কাজ করে। আমাদের মডার্ন কম্পিউটারে আমরা অনেক গুলো অ্যাপ্লিকেশন ব্যবহার করি এবং যখন যেটার প্রয়োজন পড়ে আমরা সেটা ব্যবহার করি। কম্পিউটার প্রোগ্রাম সুইচ করলেও সেই প্রোগ্রামের ইন্সট্রাকশন প্রসেসরে চলতে থাকে। এই কারনে ইন্টেল প্রসেসরের মাঝে এই ফিচারটি তৈরি করে। <br><br>
+
+                    তবে ভয় পাবার কোন কারণ নেই, কারণ এই সমস্যা সফটওয়্যার আপডেটের মাধ্যমে সমাধান করা সম্ভব বলে জানিয়েছে অনেক অপারেটিং সিস্টেম নির্মাতা। এই ব্যাপার গুলো নিয়ে আমাদের মত সাধারণ মানুষের তেমন কোন চিন্তার ব্যাপার নেই। তবে থাকবে যারা ডাটা সেন্টার বা কম্পিউটার নির্ভর বড় বড় ব্যবসা করছেন।</p>
+                </div>
+
+                <a class="btn btn-outline-dark pb-0" href="update_post.html">Edit Post</a> <hr>
+            </div>
+
+            <div class="comment-section">
+                <div class="form">
+                    <h5 class="display-5 mt-5 mb-4">Comment*</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control lead">
+                        <button class="btn btn-primary">comment</button>
+                    </div>
+                </div>
+
+                <ul class="card mt-4 mb-5 p-4">
+                    <li class="authorName">
+                        <a href="" class="title">Siyam</a>
+
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, provident!</p>
+                    </li> <hr>
+                    <li class="authorName">
+                        <a href="" class="title">Joy</a>
+
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, provident!</p>
+                    </li> <hr>
+                    <li class="authorName">
+                        <a href="" class="title">Ahsan Habib</a>
+
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, provident!</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer text-center bg-dark mt-4">
+            <p>Copyright ©2018 All rights reserved | This template is made with <i class="fa fa-heart"></i> by <span>S. Rahman</span></p>
+        </div>
+    </div>
+    
+</body>
+</html>

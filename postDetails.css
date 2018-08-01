@@ -32,18 +32,20 @@
 .right { float: right; }
 .left { float: left; }
 .lightblue { background-color: rgb(223, 247, 255); }
+.lightgrey { background-color: #F0F0F0; }
 
 body, .wrapper {
     width: 100%;
     height: 100%;
-}
-
-.wrapper .container-fluid {
-    border-bottom: 4px solid coral;
+    font-family: 'notoSans_regular', sans-serif;
 }
 
 .navbar {
     font-family: notoSans_regular, sans-serif;
+}
+
+.wrapper .container-fluid {
+    border-bottom: 4px solid coral;
 }
 
 .wrapper .container-fluid .container {
@@ -94,129 +96,41 @@ body, .wrapper {
 .brand .nav-link:hover{
     color: #333;
 }
+/*////////////////////////////////////*/
 
+.wrapper .container {
+    padding: 0;
+}
 
-/* showcase */
-/*
-.showcase {
-    background-image: url('images/header-bg.jpg');
+.wrapper .container h2 {
+    font-family: 'notoSans_bold';
+}
+
+.wrapper .container p {
+    font-family: 'notoSans_regular';
+    line-height: 1.6;
+}
+
+.wrapper .container img {
     width: 100%;
-    height: 300px;
-}*/
-
-
-/*imageUpload*/
-
-::-webkit-input-placeholder {
-    opacity: 0.8;
-    color: white;
+    height: 400px;
 }
 
-::-moz-placeholder {
-    opacity: 0.8;
-    color: white;
+.wrapper .container ul {
+    list-style: none;
 }
 
-:-moz-placeholder {
-    opacity: 0.8;
-    color: white;
+.wrapper .lead {
+    font-family: sans-serif;
 }
 
-:-ms-input-placeholder {
-    opacity: 0.8;
-    color: white;
+.wrapper input {
+    border-radius: 5px 0 0 5px;
 }
 
-.showcase {
-        font-size: 20px;
-        line-height: 1.4;
-        color: rgba(255,255,255,0.8);
-        background: #1d1f20;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+.wrapper .form .btn {
+    border-radius: 0 5px 5px 0;
 }
-
-.preview {
-        display: table;
-        width: 150px;
-        height: 150px;
-        margin: 20px auto;
-        box-shadow: 0px 0px 0px 2px rgba(33, 122, 105, 1);
-        border-radius: 50%;
-        overflow: hidden;
-
-        margin-top: 1rem;
-}
-
-.file-upload-wrapper {
-        position: relative;
-        z-index: 5;
-        display: block;
-        width: 250px;
-        height: 30px;
-        margin: 25px auto;
-        border-radius: 0px;
-        border-bottom: 1px dashed rgba(33, 122, 105, 1);
-}
-
-.file-upload-native,
-.file-upload-text {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        color: rgba(255,255,255,0.8);
-}
-
-input[type="file"]::-webkit-file-upload-button {
-        cursor: pointer;
-}
-
-.file-upload-native:focus,
-.file-upload-text:focus {
-        outline: none;
-}
-
-.file-upload-text {
-        z-index: 10;
-        padding: 5px 15px 8px;
-        overflow: hidden;
-        font-size: 14px;
-        line-height: 1.4;
-        cursor: pointer;
-        text-align: center;
-        letter-spacing: 1px;
-        text-overflow: ellipsis;
-        border: 0;
-        background-color: transparent;
-}
-
-.file-upload-native {
-        z-index: 15;
-        opacity: 0;
-}
-
-
-
-
-/*UserInfo*/
-
-.form table {
-    width: 50%;
-    margin: auto;
-}
-.form table tr th {
-    padding: 1rem;
-    text-align: left;;
-}
-
-.form .btn {
-    width: 100%;
-}
-
 /* footer */
 
 .footer{
@@ -233,7 +147,6 @@ input[type="file"]::-webkit-file-upload-button {
 .footer .fa, .footer span{
     color: #FFC107;
 }
-
 /* Responsive */
 
 @media screen and (max-width: 375px) {
@@ -264,12 +177,47 @@ input[type="file"]::-webkit-file-upload-button {
         text-align: center;
     }
 
-    .form table {
-        width: 90%;
+    .alert, .form {
+        width: 100%;
         margin: auto;
     }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 0;
+        width: 100%;
+        background-color: #333;
+        border-radius: 5px;
+    }
+
+    .navbar-nav .nav-item a {
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    .navbar-nav .nav-item:hover {
+        border: 1px solid white;
+    }
         
+    .postTitle h2 {
+        font-size: 1.2rem;
+    }
+
+    .wrapper .container {
+        padding: 1rem;
+    }
+
+    .wrapper .container img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
 }
-
-
-
