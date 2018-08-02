@@ -239,6 +239,8 @@ input[type="file"]::-webkit-file-upload-button {
 @media screen and (max-width: 375px) {
     .wrapper , .wrapper .container-fluid {
         width: 100%;
+        height: 100%;
+        box-sizing: border-box;
     }
 
     .wrapper .container-fluid .container {
@@ -260,7 +262,7 @@ input[type="file"]::-webkit-file-upload-button {
     }
 
     .wrapper .brand .navbar-brand p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         text-align: center;
     }
 
