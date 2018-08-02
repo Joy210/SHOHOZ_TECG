@@ -389,6 +389,8 @@ nav .container .navbar-nav .nav-item .nav-link {
 @media screen and (max-width: 375px) {
     .wrapper , .wrapper .container-fluid {
         width: 100%;
+        height: 100%;
+        box-sizing: border-box;
     }
 
     .wrapper .container-fluid .container {
@@ -410,7 +412,7 @@ nav .container .navbar-nav .nav-item .nav-link {
     }
 
     .wrapper .brand .navbar-brand p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         text-align: center;
     }
 	.wrapper .brand .navbar-nav{
