@@ -209,7 +209,7 @@ input[type="file"]::-webkit-file-upload-button {
     margin: auto;
 }
 .form table tr th {
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: left;;
 }
 
@@ -270,7 +270,17 @@ input[type="file"]::-webkit-file-upload-button {
         width: 90%;
         margin: auto;
     }
-        
+
+    .form table tr th {
+        padding: 1rem 0;
+        text-align: left;
+        font-size: 0.8rem;
+    }
+
+    .form .btn {
+        font-size: 0.9rem;
+    }
+     
 }
 
 
