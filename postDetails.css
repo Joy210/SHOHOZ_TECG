@@ -33,6 +33,7 @@
 .left { float: left; }
 .lightblue { background-color: rgb(223, 247, 255); }
 .lightgrey { background-color: #F9F9FA; }
+.coral { background-color: #ffff8f; }
 
 body, .wrapper {
     width: 100%;

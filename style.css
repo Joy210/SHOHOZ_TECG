@@ -497,3 +497,11 @@ nav .container .navbar-nav .nav-item .nav-link {
 		display: none;
 	}
 }
+
+@media screen and (max-width: 320px) {
+	.signInProcess .modal-body .form,
+	.registrationProcess form {
+		width: 90%;
+		margin: auto;
+	}
+}
