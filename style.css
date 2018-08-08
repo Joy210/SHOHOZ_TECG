@@ -329,7 +329,7 @@ nav .container .navbar-nav .nav-item .nav-link {
 
 /* footer */
 
-.footer{
+/*.footer{
 	padding: 2rem 1rem;
 	color: #fff;
     border-top: 4px solid coral;
@@ -342,8 +342,17 @@ nav .container .navbar-nav .nav-item .nav-link {
 }
 .footer .fa, .footer span{
 	color: #FFC107;
+}*/
+
+/* footer */
+
+.footer{
+	padding: 2rem 0;;
+	color: #fff;
 }
-/*
+.footer .col {
+	padding: 0;
+}
 .footer .row{
 	display: grid;
 	grid-template-columns: 3fr 6fr 3fr;
@@ -362,7 +371,6 @@ nav .container .navbar-nav .nav-item .nav-link {
 	color: lightslategray;
 	font-size: 0.9rem;
 }
-
 .footer ul li a:hover{
 	color: #FFC107;
 }
@@ -381,10 +389,14 @@ nav .container .navbar-nav .nav-item .nav-link {
 .footer .instaImg img{
 	padding-bottom: 0.3rem;
 }
-.footer .fa, .footer span{
+.footer .fa, .footer span a {
 	color: #FFC107;
+	text-decoration: none;
 }
-*/
+.footer span a:hover {
+	color: #fff;
+}
+
 
 @media screen and (max-width: 375px) {
     .wrapper , .wrapper .container-fluid {
@@ -476,6 +488,7 @@ nav .container .navbar-nav .nav-item .nav-link {
 		margin-top: 0;
 	}
 
+	
 	.footer {
 		text-align: center;
 	}

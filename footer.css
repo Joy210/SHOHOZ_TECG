@@ -1,0 +1,52 @@
+/* footer */
+
+.footer{
+	padding: 2rem 0;;
+	color: #fff;
+}
+.footer .col {
+	padding: 0;
+}
+.footer .row{
+	display: grid;
+	grid-template-columns: 3fr 6fr 3fr;
+}
+.footer h5{
+	font-weight: bold;
+}
+.footer ul{
+	list-style: none;
+}
+.footer li{
+	line-height: 2rem;
+}
+.footer ul li a, .footer p{
+	text-decoration: none;
+	color: lightslategray;
+	font-size: 0.9rem;
+}
+.footer ul li a:hover{
+	color: #FFC107;
+}
+.footer .input-group{
+	width: 450px;
+}
+.footer .subscribeBtn{
+	border: none;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	border-radius: 0 0.3rem 0.3rem 0;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+.footer .instaImg img{
+	padding-bottom: 0.3rem;
+}
+.footer .fa, .footer span a {
+	color: #FFC107;
+	text-decoration: none;
+}
+.footer span a:hover {
+	color: #fff;
+}
