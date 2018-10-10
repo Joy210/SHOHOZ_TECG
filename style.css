@@ -180,6 +180,9 @@ html, body {
     .postDetails h1, .about h1 {
         font-size: 1.2rem;
     }
+    .showcase1 {
+            padding-top: 0rem;
+    }
 }
 @media (max-width: 325px) {
     .postDetails img {

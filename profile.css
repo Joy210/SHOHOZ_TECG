@@ -22,10 +22,9 @@
 
 
 .showcase1 {
-        font-size: 20px;
-        line-height: 1.4;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+    font-size: 20px;
+    line-height: 1.4;
+    padding-top: 0.5rem;
 }
 
 .postDetails .preview {
