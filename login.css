@@ -6,14 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Quicksand', sans-serif;
-}
-
-.wrapper {
-    margin: 8% auto;
-    width: 400px;
-    background-color: #fff;
 }
 
 .loginBox {
@@ -76,7 +71,7 @@ button {
 
 @media (max-width: 375px) {
     .loginBox {
-        width: ;
+        width: 320px;;
         margin-top: 20%;
     }
     #signin-button, #signup-button {
