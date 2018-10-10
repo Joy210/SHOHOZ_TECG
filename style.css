@@ -122,6 +122,10 @@ html, body {
     font-weight: bold;
 }
 
+.postDetails p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
 /* responsive */
 @media (max-width: 960px) {
     .postDetails h1, .about h1 {
@@ -140,9 +144,6 @@ html, body {
     .footer h3 {
         font-size: 1.3rem;
         font-weight: bold;
-    }
-    .postDetails p {
-        font-size: 1rem;
     }
 }
 
