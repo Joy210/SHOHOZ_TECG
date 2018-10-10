@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 @import url('https://fonts.googleapis.com/css?family=Dosis|Quicksand');
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700');
 
 
 html, body {
@@ -35,6 +35,29 @@ html, body {
 .navbar ul {
     text-align: center;
     list-style: none;
+}
+
+a.navbar-brand {
+    font-family: 'Quicksand';
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.main-content h1 {
+    font-family: 'Quicksand';
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.article-header h2 {
+    font-family: 'Quicksand';
+    font-weight: 900;
+    color: #343A40;
+}
+
+.article-header h2:hover {
+    color: #294db1;
 }
 
 .listStyle {
@@ -73,9 +96,9 @@ html, body {
 }
 
 .postDetails h1, .about h1 {
-    /* border-left: 4px solid #2C313C;
-    border-top: 4px solid #2C313C;
-    padding: 0 1rem; */
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .postDetails .about,  {
@@ -115,8 +138,13 @@ html, body {
 .footer p, .footer address, .footer a { 
     font-size: 0.9rem;
 }
-.footer h4 {
-    font-weight: bold;
+.footer address {
+    line-height: 1.6;
+}
+.footer h3 {
+    font-family: 'Quicksand';
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 .developer {
     background-color: #53d397;
@@ -130,6 +158,10 @@ html, body {
     font-size: 1rem;
     line-height: 1.5;
 }
+
+
+
+
 /* responsive */
 @media (max-width: 960px) {
     .postDetails h1, .about h1 {
@@ -148,7 +180,6 @@ html, body {
     }
     .footer h3 {
         font-size: 1.3rem;
-        font-weight: bold;
     }
 }
 
@@ -184,7 +215,7 @@ html, body {
         padding: 0 1rem;
     }
     .postDetails h1, .about h1 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .showcase1 {
             padding-top: 0rem;
@@ -201,3 +232,4 @@ html, body {
     }
 }
 
+/* responsive */
