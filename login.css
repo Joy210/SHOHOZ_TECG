@@ -9,7 +9,7 @@ body {
 }
   
 .loginBox {
-    width: 380px;
+    width: 30%;
     padding: 2rem;
     margin-top: 0;
     box-sizing: border-box;
@@ -69,10 +69,13 @@ button {
 
 @media (max-width: 375px) {
     .loginBox {
-        width: 320px;
-        margin: 20% auto;
+        width: 95%;
+        margin-top: 20%;
     }
     #signin-button, #signup-button {
         font-size: 1.3rem;
+    }
+    .loginBox label {
+        font-size: 0.9rem;
     }
 }
