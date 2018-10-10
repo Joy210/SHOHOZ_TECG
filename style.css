@@ -122,14 +122,71 @@ html, body {
     font-weight: bold;
 }
 
-
+/* responsive */
+@media (max-width: 960px) {
+    .postDetails h1, .about h1 {
+        font-size: 2rem;
+    }
+    .postDetails .form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .postDetails img {
+        height: 260px;
+    }
+    .article-list a {
+        font-size: 0.9rem;
+    }
+    .footer h3 {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .postDetails p {
+        font-size: 1rem;
+    }
+}
 
 @media (max-width: 576px) {
     .footer, .footer a {
         text-align: center;
     }
+    .newsLetter p {
+        font-size: 0.8rem
+    }
     .footer .input-group {
         width: 80%;
         margin: 0 auto;
     }
+    .developer p {
+        font-size: 1rem;
+    }    .postDetails h1, .about h1 {
+        font-size: 1.5rem;
+    }
 }
+
+@media (max-width: 375px) {
+    .postDetails img {
+        height: 200px;;
+    }
+    .footer .input-group {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .developer p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+    .postDetails h1, .about h1 {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 325px) {
+    .postDetails img {
+        height: 160px;
+        font-size: 1.1rem;
+    }
+    .postDetails p {
+        font-size: 0.9rem;
+    }
+}
+
