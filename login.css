@@ -9,7 +9,13 @@
 body {
     font-family: 'Quicksand', sans-serif;
 }
-  
+
+.wrapper {
+    margin: 8% auto;
+    width: 400px;
+    background-color: #fff;
+}
+
 .loginBox {
     width: 380px;
     padding: 2rem;
