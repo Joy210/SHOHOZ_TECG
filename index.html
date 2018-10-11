@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
+    
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <link rel="shortcut icon" type="image/png" href="images/logo.png">
 
@@ -35,7 +36,7 @@
                     <li class="nav-item"><a href="https://joy210.github.io/portfolio/" class="nav-link" target="_blank">Portfolio</a></li>
                     <li class="nav-item"><a href="addPost.html" class="nav-link">Add Post</a></li>
                     <li class="nav-item"><a href="profile.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                     <li class="nav-item"><a href="login.html" class="nav-link text-warning">Sign In/Sign Up</a></li>
                 </ul>
             </div>
@@ -46,7 +47,7 @@
     <!-- header image -->
     <div class="showcase">
         <div class="showcase-header">
-            <h1 class="text-center">Welcome to <strong class="text-warning">SHOHOZ TECH</strong></h1>
+            <h1 class="title text-center">Welcome to <strong class="text-warning">SHOHOZ TECH</strong></h1>
             <div aria-hidden="true" class="search">
                 <div class="search__icon">Search</div>
 
@@ -200,7 +201,7 @@
                     </form>
                 </div>
                 <div class="col-xs-12 col-md-4 pb-5">
-                    <div class="contact">
+                    <div class="contact" id="contact">
                         <h3 class="display-6 text-white text-uppercase">Contact</h3> <hr>
                         <address class="text-white">
                             House: 23, Block: O, Mohammadpur <br>
@@ -224,35 +225,17 @@
 
 
 
+    <!-- search bar -->
+    <script src="script/searchBar.js"></script>
+    <!-- search bar -->
 
     <!-- animation -->
     <script src="script/animation.js"></script>
     <!-- animation -->
 
-
-    <!-- search bar -->
-    <script>
-        $('.search').on('click', function() {
-        if ($(this).attr('aria-hidden') === 'true') {
-            $(this).attr('aria-hidden', 'false');
-        } else {
-            //$(this).attr('aria-hidden', 'true');
-        }
-    });
-
-    $(document).bind("mouseup touchend", function(e) {
-        var target = $(event.target);
-        if ($('.search').attr('aria-hidden') === 'false') {
-            if (!$('.search').is(e.target) // if the target of the click isn't the search...
-                && $('.search').has(e.target).length === 0) // ... nor a descendant of the search
-            {
-                $('.search').attr('aria-hidden', 'true');
-            }
-        }
-    });
-    </script>
-    <!-- search bar -->
-    
+    <!-- scrolling -->
+    <script src="script/smoothScrolling.js"></script>
+    <!-- scrolling -->
 
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
