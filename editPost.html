@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="profile.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <link rel="shortcut icon" type="image/png" href="images/logo.png">
     <title>Edit Post</title>
@@ -121,14 +121,16 @@
         <div class="container">
             <div class="row pt-5">
                 <div class="col-xs-12 col-md-3 pb-5">
-                    <h3 class="display-6 text-white text-uppercase">Powered By</h3>
-                    <hr>
-                    <ul class="list-group listStyle text-left">
-                        <li><a href="" class="nav-link text-white pl-0 pt-0">Python</a></li>
-                        <li><a href="" class="nav-link text-white pl-0">Django</a></li>
-                        <li><a href="" class="nav-link text-white pl-0">Bootstrap</a></li>
-                        <li><a href="" class="nav-link text-white pl-0">Html, Css</a></li>
-                    </ul>
+                    <div class="powered-by">
+                        <h3 class="display-6 text-white text-uppercase">Powered By</h3>
+                        <hr>
+                        <ul class="list-group listStyle text-left">
+                            <li><a href="" class="nav-link text-white pl-0 pt-0">Python</a></li>
+                            <li><a href="" class="nav-link text-white pl-0">Django</a></li>
+                            <li><a href="" class="nav-link text-white pl-0">Bootstrap</a></li>
+                            <li><a href="" class="nav-link text-white pl-0">Html, Css</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-xs-12 col-md-5 pb-5">
                     <form class="newsLetter">
@@ -142,13 +144,15 @@
                     </form>
                 </div>
                 <div class="col-xs-12 col-md-4 pb-5">
-                    <h3 class="display-6 text-white text-uppercase">Contact</h3> <hr>
-                    <address class="text-white">
-                        House: 23, Block: O, Mohammadpur <br>
-                        Phone No: 00 123 456 789 <br>
-                        Website: www.khidmahit.com <br>
-                        Gmail: khidmahit@info.com
-                    </address>
+                    <div class="contact">
+                        <h3 class="display-6 text-white text-uppercase">Contact</h3> <hr>
+                        <address class="text-white">
+                            House: 23, Block: O, Mohammadpur <br>
+                            Phone No: 00 123 456 789 <br>
+                            Website: www.khidmahit.com <br>
+                            Gmail: khidmahit@info.com
+                        </address>
+                    </div>
                 </div>
             </div>
         </div>
@@ -198,5 +202,14 @@
             }); 	
         });
     </script>
+
+    <script src="script/animation.js"></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html> 
