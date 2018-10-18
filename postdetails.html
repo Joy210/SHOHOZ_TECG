@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="comment.css">
+
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
 
     <link rel="shortcut icon" type="image/png" href="images/logo.png">
     <title>Post Details</title>
@@ -35,7 +38,7 @@
                     <li class="nav-item"><a href="https://joy210.github.io/portfolio/" class="nav-link" target="_blank">Portfolio</a></li>
                     <li class="nav-item"><a href="addPost.html" class="nav-link">Add Post</a></li>
                     <li class="nav-item"><a href="profile.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                     <li class="nav-item"><a href="login.html" class="nav-link">Sign In/Sign Up</a></li>
                 </ul>
             </div>
@@ -46,9 +49,9 @@
     <div class="post">
         <div class="container">
             <div class="row mt-5">
-                <div class="col-xs-12 col-md-8 bg-white px-3 pb-5 mb-3">
+                <div class="col-xs-12 col-md-8 pb-5 mb-3">
                     <!-- postDetails -->
-                    <div class="postDetails pb-5">
+                    <div class="postDetails bg-white pb-5 px-3">
                         <div class="postDetails-header">
                             <h1 class="display-6 pt-3">Lorem ipsum dolor sit amet</h1>
                         </div><hr>
@@ -64,33 +67,101 @@
                     <!-- postDetails -->
 
                     <!-- comments -->
-                    <div class="comment">
-                        <form action="">
-                            <h2>Comments</h2> <hr>
-                            <div class="input-group">
-                                <input type="text" class="form-control">
-                                <button class="btn btn-dark">Comment</button>
-                            </div>
-                            <div class="card mt-3">
-                                <div class="card-header">
-                                    <h6 class="p-0 left">Lorem ipsum dolor sit amet.</h6>
-                                    <button class="btn btn-outline-dark btn-sm right" data-toggle="collapse" data-target="#demo" type="button"> Reply</button>
-                                </div>
-                                <div class="card-body collapse" id="demo">
-                                    <div class="row">
-                                        <div class="col-md-2 mb-3">
-                                            <img src="images/t1.jpg" alt="" width="100%" height="auto">
+                    <div class="comments-container mt-4">
+                        <h2 class="display-6">Comments</h2> <hr>
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <button class="btn btn-dark">Comment</button>
+                        </div>
+                
+                        <ul id="comments-list" class="comments-list">
+                            <li>
+                                <div class="comment-main-level">
+                                    <!-- Avatar -->
+                                    <div class="comment-avatar"><img src="images/t1.jpg" alt=""></div>
+                                    <!-- Contenedor del Comentario -->
+                                    <div class="comment-box">
+                                        <div class="comment-head">
+                                            <h6 class="comment-name by-author"><a href="">Joy</a></h6>
                                         </div>
-                                        <div class="col-md-10">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus veniam incidunt eaque debitis quia autem, quod error laboriosam perferendis blanditiis nam et inventore fugit impedit earum vel quibusdam magni! Amet?</p>
+                                        <div class="comment-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?</p>
+
+                                            <button>Relpy</button>
+                                            <button class="px-2">Edit</button>
+                                            <button class="text-danger">Delete</button>
+
+                                            <span class="arrow" data-toggle="collapse" data-target="#hide"><i class="fa fa-angle-down right"></i></span>
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
-                        </form>
+                                <!-- Respuestas de los comentarios -->
+                                <ul class="comments-list reply-list collapse" id="hide">
+                                    <li>
+                                        <!-- Avatar -->
+                                        <div class="comment-avatar"><img src="images/t2.jpg" alt=""></div>
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="comment-box">
+                                            <div class="comment-head">
+                                                <h6 class="comment-name"><a href="">Siyam</a></h6>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                            <div class="comment-content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?</p>
+
+                                                <button>Relpy</button>
+                                                <button class="px-2">Edit</button>
+                                                <button class="text-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                
+                                    <li>
+                                        <!-- Avatar -->
+                                        <div class="comment-avatar"><img src="images/t1.jpg" alt=""></div>
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="comment-box">
+                                            <div class="comment-head">
+                                                <h6 class="comment-name by-author"><a href="">Joy</a></h6>
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                            <div class="comment-content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?</p>
+
+                                                <button>Relpy</button>
+                                                <button class="px-2">Edit</button>
+                                                <button class="text-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                
+                            <li>
+                                <div class="comment-main-level">
+                                    <!-- Avatar -->
+                                    <div class="comment-avatar"><img src="images/t2.jpg" alt=""></div>
+                                    <!-- Contenedor del Comentario -->
+                                    <div class="comment-box">
+                                        <div class="comment-head">
+                                            <h6 class="comment-name"><a href="">Siyam</a></h6>
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        <div class="comment-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?</p>
+
+                                            <button>Relpy</button>
+                                            <button class="px-2">Edit</button>
+                                            <button class="text-danger">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <!-- comments -->
                 </div>
+
                 <div class="col-xs-12 col-md-4">
                     <!-- about you -->
                     <div class="about bg-dark">
@@ -154,7 +225,7 @@
                     </form>
                 </div>
                 <div class="col-xs-12 col-md-4 pb-5">
-                    <div class="contact">
+                    <div class="contact" id="contact">
                         <h3 class="display-6 text-white text-uppercase">Contact</h3> <hr>
                         <address class="text-white">
                             House: 23, Block: O, Mohammadpur <br>
@@ -174,11 +245,11 @@
     <!-- footer -->
 
 
-
-    <script
+    <script src="script/smoothScrolling.js"></script>
+    <!-- <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 

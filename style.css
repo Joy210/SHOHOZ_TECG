@@ -161,18 +161,8 @@ a.navbar-brand {
     font-size: 1rem;
     line-height: 1.5;
 }
-
-.comment p {
-    font-size: 0.8rem;
-}
-.comment input {
-    border-radius: 3px 0 0 3px;
-}
-.comment .input-group .btn {
-    border-radius: 0 3px 3px 0;
-}
-.comment .card-header .btn {
-    border-radius: 0;
+.comments-container {
+    background-color: rgb(231, 231, 231);
 }
 
 /* responsive */
