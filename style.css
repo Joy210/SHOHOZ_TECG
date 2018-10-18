@@ -14,6 +14,9 @@ html, body {
     font-family: 'Quicksand', sans-serif;
 }
 
+.left { float: left; }
+.right { float: right; }
+
 /* Showcase */
 .showcase{
 	width: 100%;
@@ -159,8 +162,18 @@ a.navbar-brand {
     line-height: 1.5;
 }
 
-
-
+.comment p {
+    font-size: 0.8rem;
+}
+.comment input {
+    border-radius: 3px 0 0 3px;
+}
+.comment .input-group .btn {
+    border-radius: 0 3px 3px 0;
+}
+.comment .card-header .btn {
+    border-radius: 0;
+}
 
 /* responsive */
 @media (max-width: 960px) {
@@ -221,6 +234,7 @@ a.navbar-brand {
             padding-top: 0rem;
     }
 }
+
 @media (max-width: 325px) {
     .postDetails img {
         width: 100%;

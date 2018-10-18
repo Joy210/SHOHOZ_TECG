@@ -161,3 +161,13 @@ input::placeholder {
     transform: scale(1.3);
 }
 
+table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px dashed rgb(194, 194, 194);
+}
+
+table label {
+    padding: 0.3rem;
+}
