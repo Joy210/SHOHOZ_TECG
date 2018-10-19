@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'font-1';
+    src: url('fonts/Nunito-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'font-1', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/bright-squares.png');
+}
+
+.facebook { background-color: #4267B2; }
+.linkedin { background-color: #0073B2; }
+.twitter { background-color: #1DA1F2; }
+.instagram { background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF); }
+
+.lightBlue { background-color: rgb(230, 249, 255); }
+.bgc { background-color: #f6fdff; }
+.lightOrange { background-color: #F28C20; }
+.floatNone { float: none; }
+.listNone { list-style: none; }
+
+.header .metaContent {
+    transform: translateY(180px)
+}
+
+
+.card { border: 0; }
+.card-header {
+    background-image: url(images/h2.jpg);
+    background-size: cover;
+}
+.card-header h5 {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+.card-body, .card-body span {
+    background-image: url('images/honeycomb.png');
+    color: white;
+    font-size: 0.9rem;
+}
+.panel {
+    background-image: url('images/honeycomb.png');
+    color: white;
+    font-size: 0.9rem;
+    padding: 1rem;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.showcase {
+    background-image: url('images/header-bg1.jpg');
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: left;
+    border-bottom: 5px solid #53D397;
+}
+
+/* change top and right */
+.userImage {
+    position: absolute;
+    top: 2px;
+    right: 60px;
+}
+.userImage img {
+    width: 370px;
+}
+/* userImage */
+
+.skills .list-group li {
+    line-height: 1.8;
+}
+.skills .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 170px;
+}
+.skills ul li ul li, .skills .fa {
+    font-size: 0.9rem;
+}
+.metaContent {
+    color: white;
+    /* padding-top: 10%; */
+    float: left;
+    
+}
+
+.metaContent h4 {
+    font-size: 2.5rem;
+}
+
+.metaContent h4 span {
+    font-weight: bolder;
+}
+
+.metaContent p {
+    font-size: 0.75rem;
+}
+
+.metaContent .btn {
+    padding: 0.3rem 1rem;
+    outline: none;
+}
+
+.main-body h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #282C34;
+    padding: 0.5rem 0;
+}
+
+
+.main-body .box .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.progress {
+    height: 1.5rem;
+    margin: 1rem 0;
+    text-align-last: left;
+}
+.progress-bar {
+    padding-left: 40px;
+}
+
+.experience {
+    margin-top: 50px;
+}
+
+.experience p {
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.content-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+
+.card-header {
+    border-radius: 0;
+    border: 0;
+    color: #000312;
+}
+
+
+.content img {
+    width: 100%;
+    height: 180px;
+    transition: all 400ms ease;
+    border: 4px solid rgb(216, 216, 216);
+}
+.content img:hover {
+    transform: scale(0.9);
+    /* opacity: .7; */
+}
+
+
+.cardBox {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 1.5rem;
+    border: 0;
+}
+
+.portfolio .row  {
+}
+
+.portfolio .col {
+    padding: 0;
+}
+
+.portfolio .thumbnails {
+    width: 100%;
+    padding: 0;
+    border: 4px dashed rgb(156, 156, 156);
+    height: 100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 400ms ease;
+
+}
+.portfolio .thumbnails:hover {
+    transform: scale(0.95);
+}
+
+.portfolio img {
+    width: 100%;
+    height: 230px;
+}
+
+.portfolio .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    border: 2px solid white;
+}
+
+.portfolio .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.5 ease;
+    background-color:rgba(156, 156, 156, 0.849);
+    padding: 0;
+    margin: 0;
+}
+
+
+.portfolio .thumbnails:hover .overlay {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.footer {
+    text-align: center;
+    color: rgb(35, 33, 56);
+    width: 100%;
+    height: 150px;
+    background-color: #343A40;
+}
+
+.footer ul {
+    list-style: none;
+}
+.footer ul li {
+    display: inline-block;
+}
+.footer i {
+    color: white;
+    width: 40px;
+    padding: 0.5rem 0.8rem;
+    /* border: 2px solid white; */
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+
+}
+.footer i:hover {
+    background-color: white;
+    transition: 0.5s;
+    color: #282C34;
+}
