@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="search.css">
 
@@ -23,7 +25,7 @@
 <body class="body">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top bg-dark py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top bg-dark text-dark py-3">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">S. Rahman</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -46,12 +48,12 @@
 
     <!-- header image -->
     <div class="showcase">
-        <div class="showcase-header">
+        <div class="showcase-content">
             <h1 class="title text-center">Welcome to <strong class="text-warning">SHOHOZ TECH</strong></h1>
             <div aria-hidden="true" class="search">
                 <div class="search__icon">Search</div>
 
-                <!-- Search Bar -->
+                
                 <form class="search__container">
                     <input type="text" placeholder="What are you searching..." id="search" name="search">
                     <button type="submit" name="submit"></button>
@@ -59,8 +61,7 @@
             </div>  
         </div>
     </div>
-    <!-- header image -->
-
+    <!-- slideShow -->
 
     <!-- main-body -->
     <div class="main-content">
@@ -230,6 +231,25 @@
     <!-- scrolling -->
     <script src="script/smoothScrolling.js"></script>
     <!-- scrolling -->
+
+    <!-- slideShow -->
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2500);    
+        }
+        </script>
+    <!-- slideShow -->
 
     <!-- <script
         src="https://code.jquery.com/jquery-3.3.1.js"
